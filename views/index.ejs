@@ -1,0 +1,51 @@
+<%- include('layout/header') %>
+    <div class="text-center mt-4">
+        <img src="image/logo2.png" class="h-24 w-auto m-auto" alt="">
+        <h1 class="text-4xl font-semibold uppercase mt-16">Selamat Datang!</h1>
+        <p class="text-lg my-3">Sistem Informasi Bengkel Dunlop Kab.Garut</p>
+    </div>
+    <div class="card-wrapper mb-20 mt-8">
+        <div class="card bg-red-400 shadow-xl w-1/4 m-2 h-44 relative">
+            <i class="fi fi-rr-user text-9xl top-2 text-red-300 absolute right-0"></i>
+            <a href="/konsumen" class="card-body">
+                <i class="fi fi-rr-7 text-6xl text-gray-200"></i>
+                <h2 class="card-title text-white">Pelanggan</h2>
+            </a>
+            <div class="card-actions flex items-center justify-center bg-white w-full hover:bg-red-300">
+                <a href="/konsumen" class="py-1">View <i class="fi fi-rr-angle-circle-right m-auto "></i></a>
+            </div>
+        </div>
+
+        <div class="card bg-yellow-400 shadow-xl w-1/4 m-2 h-44 relative">
+            <i class="fi fi-rr-document text-9xl top-2 text-yellow-300 absolute right-0"></i>
+            <div class="card-body">
+                <i class="fi fi-rr-9 text-6xl text-gray-200"></i>
+                <h2 class="card-title text-white">Sparepart</h2>
+            </div>
+            <div class="card-actions flex items-center justify-center  bg-white w-full hover:bg-yellow-300">
+                <a href="/produk" class="py-1">View <i class="fi fi-rr-angle-circle-right m-auto "></i></a>
+            </div>
+        </div>
+
+        <div class="card bg-blue-400 shadow-xl w-1/4 m-2 h-44 relative">
+            <i class="fi fi-rr-gears text-9xl top-2 text-blue-300 absolute right-0"></i>
+            <div class="card-body">
+                <i class="fi fi-rr-4 text-6xl text-gray-200"></i>
+                <h2 class="card-title text-white">Transaksi</h2>
+            </div>
+            <div class="card-actions flex items-center justify-center  bg-white w-full hover:bg-blue-300">
+                <a href="/transaksi" class="py-1">View <i class="fi fi-rr-angle-circle-right m-auto "></i></a>
+            </div>
+        </div>
+        <div class="card bg-green-400 shadow-xl w-1/4 m-2 h-44 relative">
+            <i class="fi fi-rr-database text-9xl top-2 text-green-300 absolute right-0"></i>
+            <div class="card-body">
+                <i class="fi fi-rr-5 text-6xl text-gray-200"></i>
+                <h2 class="card-title text-white">Supplier</h2>
+            </div>
+            <div class="card-actions flex items-center justify-center  bg-white w-full hover:bg-green-300">
+                <a href="/supplier" class="py-1">View <i class="fi fi-rr-angle-circle-right m-auto "></i></a>
+            </div>
+        </div>
+    </div>
+    <%- include('layout/footer') %>

@@ -1,0 +1,50 @@
+<%- include('../layout/header') %>
+    <div class="container border-b-2 h-16">
+        <div class="my-4 ml-4">
+            <a href="/produk" class="p-2 bg-red-400 text-white rounded-sm mr-2"><i
+                    class="fi fi-rr-angle-double-small-left text-xs"></i>
+                kembali</a>
+        </div>
+    </div>
+    <div class="w-2/3 mx-auto mb-40 mt-4">
+        <h2 class="text-center text-xl font-bold">Data Produk</h2>
+        <form action="/create_produk" method="post" class="m-auto mt-2 relative">
+            <div class="m-auto flex-wrap flex border-l-4 border-red-400 rounded-sm p-4 mt-4">
+                <div class="form-group mx-2">
+                    <p>kode barang</p>
+                    <input type="text" name="kode_barang" class="input-bordered h-8 pl-2 bg-slate-200">
+                </div>
+                <div class="form-group mx-2">
+                    <p>kode_barcode</p>
+                    <input type="text" name="kode_barcode" class="input-bordered h-8 pl-2 bg-slate-200">
+                </div>
+                <div class="form-group mx-2">
+                    <p>Nama barang</p>
+                    <input type="text" name="nama_barang" class="input-bordered h-8 pl-2 bg-slate-200">
+                </div>
+                <div class="form-group mx-2">
+                    <p>Supplier</p>
+                    <input type="text" name="supplier" class="input-bordered h-8 pl-2 bg-slate-200 mb-2">
+                </div>
+                <div class="form-group mx-2">
+                    <p>Jenis</p>
+                    <input type="text" name="jenis" class="input-bordered h-8 pl-2 bg-slate-200">
+                </div>
+                <div class="form-group mx-2">
+                    <p>Rak</p>
+                    <input type="text" name="rak" class="input-bordered h-8 pl-2 bg-slate-200">
+                </div>
+                <div class="form-group mx-2">
+                    <p>Harga beli</p>
+                    <input type="text" name="harga_beli" class="input-bordered h-8 pl-2 bg-slate-200">
+                </div>
+                <div class="form-group mx-2">
+                    <p>Harga jual</p>
+                    <input type="text" name="harga_jual" class="input-bordered h-8 pl-2 bg-slate-200">
+                </div>
+            </div>
+            <input type="submit" name="submit" class="p-2 bg-blue-400 text-white rounded-sm absolute right-0
+                    mt-2">
+        </form>
+    </div>
+    <%- include('../layout/footer') %>

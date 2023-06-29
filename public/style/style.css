@@ -1,0 +1,45 @@
+
+[data-theme="light"] {
+    --tw-bg-opacity: 1;
+    background-color: rgb(203 213 225 / var(--tw-bg-opacity));
+}
+.nav ul li a:hover{
+    color: white;
+}
+@media screen and (max-width: 1024px) {
+    .black::before {
+        content: "";
+        position: fixed;
+        z-index: 21;
+        width: 80%;
+        height: 100vh;
+        right: 0;
+        bottom: 0;
+        background-color: rgb(0, 0, 0);
+        opacity: 0.5;
+    }
+};
+
+#table {
+    width: 100%;
+}
+.dataTable {
+    width: 100% !important
+}
+#table_wrapper .dataTables_scrollBody table {
+  width: 20% !important;
+}
+
+#table_wrapper .dataTables_scrollHead,
+#table_wrapper .dataTables_scrollHead table {
+  width: 20% !important;
+  table-layout: 20% !important;
+}
+.card-wrapper {
+  display: flex;
+  justify-content: space-around;
+};
+
+.form-group {
+  margin: 0 10px;
+}
